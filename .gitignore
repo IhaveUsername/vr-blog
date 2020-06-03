@@ -2,7 +2,6 @@
 .DS_Store
 
 # Jekyll build
-/_site/
 .jekyll-metadata
 #Gemfile.lock
 
