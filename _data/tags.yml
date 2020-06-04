@@ -1,15 +1,15 @@
-speeches:
-  name: speeches
-  description: Some of the greatest words ever spoken.
-  cover: assets/images/speeches.jpg
-fiction:
-  name: fiction
+vr:
+  name: vr
+  description: Enter the Matrix.
+  cover: assets/images/vr.jpg
+ar:
+  name: ar
   description: False
   cover: False
-fables:
-  name: fables
-  description: A series of short stories that make you think.
-  cover: assets/images/fables.jpg
+games:
+  name: games
+  description: Articles for game devs.
+  cover: assets/images/vive.jpg
 getting-started:
   name: getting-started
   description: False
