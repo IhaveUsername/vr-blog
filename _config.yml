@@ -6,7 +6,7 @@ language: 'en-us'
 words_per_minute: 200
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: 'http://www.thevrist.com/'
+baseurl: '/'
 
 # Website info
 title: VR dev blog
@@ -34,7 +34,7 @@ twitter: GamerToTheEnd # replace by your username
 
 # Permalinks
 permalink: /:title
-# permalink: /author/:author
+permalink: /author/:author
 # permalink: /tag/:tag
 
 # Authors' info in `_data/authors.yml`
