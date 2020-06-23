@@ -11,10 +11,10 @@ baseurl: '/'
 # Website info
 title: VR dev blog
 description: Guidelines for VR software developers and hardware manufacturers
-cover: assets/images/blog-cover.jpg
-logo: assets/images/blog-icon.png
-logo_dark: assets/images/favicon.png
-favicon: assets/images/favicon.png
+cover: /assets/images/blog-cover.jpg
+logo: /assets/images/blog-icon.png
+logo_dark: /assets/images/favicon.png
+favicon: /assets/images/favicon.png
 CNAME: #add cname for website to be created
 
 # Social info
