@@ -10,7 +10,3 @@ games:
   name: games
   description: Articles for game devs.
   cover: assets/images/vive.jpg
-getting-started:
-  name: getting-started
-  description: False
-  cover: False
