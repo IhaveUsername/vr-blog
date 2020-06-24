@@ -1,9 +1,9 @@
 vr:
-  name: vr
+  name: VR
   description: Enter the Matrix.
-  cover: assets/images/vr.jpg
+  cover: assets/images/vive.jpg
 ar:
-  name: ar
+  name: AR
   description: False
   cover: False
 games:

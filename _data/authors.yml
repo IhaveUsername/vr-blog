@@ -11,11 +11,11 @@ ghost:
 Ilja:
   username: ilja
   name: Ilja Zegars
-  location: London, UK
-  url_full: http://hannah.wf/
-  url: hannah.wf
+  location: Helsinki, FI
+  url_full: https://thevrist.com/
+  url: thevrist.com
   bio: Hannah is the co-founder and lead developer at Ghost. She spends her days looking after Ghost's developer community, tracking down bugs & ensuring Ghost(Pro) is a happy place.
-  picture: assets/images/tit.png
+  picture: assets/images/iljaz.jpg
   facebook: False
-  twitter: erisds
+  twitter: GamerToTheEnd
   cover: assets/images/army.jpg
