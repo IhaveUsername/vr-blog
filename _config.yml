@@ -8,6 +8,7 @@ words_per_minute: 200
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: ''
 
+
 # Website info
 title: VR blog
 description: VR/AR software and hardware reviews and guides
