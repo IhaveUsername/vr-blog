@@ -31,7 +31,7 @@ When everything is connected correctly you will see your desktop wallpaper, rota
 
 
 ![](/assets/images/huawei_facemask.jpg)
-*Face mask is attached using magnetic force and is easily removed revelaing lenses*
+*Face mask is attached using magnetic force and is easily removed revealing lenses*
 
 ## Functionality
 With the Glass up and running, you can go in the options and choose one of two options - screen stuck to your head or static in the VR environment. If you choose the latter one, you will be able to see a 360 picture of a room of a decent quality and a screen hanging in the air in the middle. Settings also allow you to move the screen closer or further, horizontally or vertically, change the screen's curvature, and adjust overall brightness of the glasses.
@@ -66,7 +66,7 @@ Lenses that are traditionally used for VR headsets are simple Fresnel lenses, wh
 What makes traditional headsets bulky in size are the limitations of these lenses - screen and lens require having specific minimum distance between them, otherwise image would not be in focus. Think of it the same way as the human eye cannot focus on the objects that are just a few centimeters (half an inch) away from the eye. 
 
 
-![](/assets/images/huawei_lenses2.png)
+![](/assets/images/h_lenses2.png)
 *Fresnel lens compared to pancake lens. (Image: Oculus Connect 5)*
 
 
