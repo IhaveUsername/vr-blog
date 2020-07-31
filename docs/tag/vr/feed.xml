@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/vr/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-07-13T17:50:55+03:00</updated>
+  <updated>2020-07-31T12:07:41+03:00</updated>
   <id>http://localhost:4000/tag/vr/feed.xml</id>
 
   
@@ -104,6 +104,140 @@
 
       
         <summary type="html">First impression which you get when you put on Pimax Vision 8k Plus - wow, now this is a good Pimax headset that can be recommended. And indeed it has multiple improvements that make it a much desired device, compared to my Pimax 5k Plus that I got from Kickstarter last year.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Pico Neo 2 Review</title>
+      <link href="http://localhost:4000/piconeo2" rel="alternate" type="text/html" title="Pico Neo 2 Review" />
+      <published>2020-07-12T13:00:00+03:00</published>
+      <updated>2020-07-12T13:00:00+03:00</updated>
+      <id>http://localhost:4000/piconeo2</id>
+      <content type="html" xml:base="http://localhost:4000/piconeo2">&lt;p&gt;The first feeling you get when you put on the Pico Neo 2 headset - this is what I hope to get from the Quest 2. It’s not just the lack of screen door effect, or slightly bigger field of view. It is an overall feeling of balance between all the desired features. Would I ever want better screen resolution in autonomous VR? Probably. But not in the next few years.&lt;/p&gt;
+
+&lt;h2 id=&quot;neo-2--neo-2-eye&quot;&gt;Neo 2 &amp;amp; Neo 2 Eye&lt;/h2&gt;
+
+&lt;p&gt;First, let’s meet the whole enterprise family. There are two devices with slight but important differences. White cased Neo 2 is a standard model with Snapdragon 745, 128 GB of storage, 6 DOF (Degrees of Freedom), and two controllers. The dark grey version is a Pico Neo 2 Eye - it has exactly the same specs and features, but it also has a built-in eye tracking module from &lt;a href=&quot;https://www.tobii.com/&quot;&gt;Tobii&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pico-lenses.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;View of the lenses in the non-eye tracking model&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;For my review Pico has provided me with Neo 2, so I didn’t have a chance to try how well the eye tracking works, but I heard it’s great. If you are interested in this feature, check Tony’s review on the &lt;a href=&quot;https://skarredghost.com/2020/07/19/pico-neo-2-eye-review-2/&quot;&gt;Pico Neo 2 Eye&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;headset&quot;&gt;Headset&lt;/h2&gt;
+
+&lt;p&gt;Pico is promoting both headsets as enterprise solutions, and it is clearly visible in the product. Neo 2 headset combines all the features you could possibly think of and adds few specifically for the enterprise use. Buttons on the headset for the use without controllers? Check. Rubber material face mask and top head strap that wouldn’t absorb sweat? Check. Separate plug to charge battery while leaving USB port empty? Check.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pico-head.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;It doesnt feel cheap like some Chinese VR products&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Overall the feeling of wearing the headset is quite solid - although limitation of only three predefined positions for the top headstrap is concerning - I had to use the longest position for the strap, and my head is not the largest there is. I really liked the idea of moving the battery to the back of the headset - it provides additional balance on the head, and the headset feels lighter than it is.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pico-strap.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Note the top head strap holes&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;If you are wondering about the grill on the front plate of the headset - it is a heat grill. Neo 2 has active cooling and you can hear loud fan when the system decides it is too hot in a room.&lt;/p&gt;
+
+&lt;h2 id=&quot;display&quot;&gt;Display&lt;/h2&gt;
+
+&lt;p&gt;Neo 2 is using a single LCD screen which works at 75 Hz in resolution of 3,840 × 2,160 pixels. Since there is only one screen, there is no mechanical IPD (Inter Pupillary Distance) adjustment. Additionally I have discovered incorrect information about the screen frequency. For the &lt;a href=&quot;https://youtu.be/lQ8fj0380Kw&quot;&gt;video review&lt;/a&gt; on my YouTube channel I have decided to record through the lens comparison between Pico Neo 2 and Oculus Quest. If you have ever recorded a screen, you know that you have to match your camera’s shutter speed with a screen frequency if you want to avoid flickering on the recording. For this reason I was recording Quest footage at 72 fps, but when I switched to Neo 2 I could clearly see flickering when recording at 75 fps and zero flickering at 72 fps. That clearly indicates that Pico Neo 2 that I have was running screens at 72 Hz instead of 75 Hz defined in specifications. Not a huge difference, but still worth noting.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pico-comparison.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Side by side comparison of image in Pico Neo 2 and Oculus Quest&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;As stated previously - screendoor on Neo 2 is much less visible compared to Oculus Quest. However I have noticed that the same scenes on Quest have better colors and contrast, mostly due to the LCD losing to the OLED. Headset is using traditional Fresnel lenses, so clearly you get all the benefits and drawbacks of these - big sweetspot, some godrays and glares noticeable only in the dark scenes. Overall I was happy with the visuals.&lt;/p&gt;
+
+&lt;h2 id=&quot;sound&quot;&gt;Sound&lt;/h2&gt;
+
+&lt;p&gt;Pico Neo 2 has built-in speakers in the headstrap, in the same place as Oculus Quest does. However sound quality in Pico is… acceptable. Assuming you are going to be doing training in the headset, and not listening to the latest Skrillex album, it’s more than enough. For the latter scenario there is a 3.5 mm port for connecting headphones.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pico-speakers.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Built-in speakers are good for the purpose&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tracking-and-controllers&quot;&gt;Tracking and Controllers&lt;/h2&gt;
+
+&lt;p&gt;As stated before, Pico Neo 2 is a 6DOF headset with fully tracked controllers. Headset is using two front facing cameras for tracking, similar to any WMR headset, Vive Cosmos, or Oculus headsets. But it is the first finished device that I’ve tried with magnetic controller tracking. I have seen this tracking before, it is developed by Canadian company NDI and is called &lt;a href=&quot;https://www.atraxa.ca/&quot;&gt;Atraxa&lt;/a&gt;. While working at Varjo I had a chance to test their devkit. Although tracking was solid in ideal conditions, as one might expect - accuracy degrades  significantly when there are a lot of interfering electronics and metal objects around - computers, flight joysticks, monitors. For this reason Varjo products decided to stick with SteamVR controllers for now.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pico-controllers.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Controllers aren’t the worst. They aren’t the best either&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Tracking with Neo 2 controllers is decent - you have no difficulties pointing at something and picking up objects, but you will not be able to perform accurate surgery with these controllers. Their accuracy is not precise enough, and it’s clear that software is smoothing movement a little bit so there wouldn’t be visible trembling. But at least you can track your hands behind your back, under your legs, under your shirt, and even under your skin if you would like that (I wouldn’t recommend the last one). Magnetic tracking has no issues beaming through the flesh. Also worth noting that the maximum tracked “play” area for Neo 2 is limited by 3 by 3 meter square.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pico-controllers2.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;You can see controller specs here. Also it looks like a d uck from this angle&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Controllers themselves are quite small, they have thumbsticks and plenty of buttons including trigger and grip buttons. However you wouldn’t call these controllers comfortable to hold. You need to have constant tension in your fingers to make sure they don’t fall out. Not as bad as Vive Cosmos controllers though. Neo 2 controllers have a built in battery which can be charged with USB-C cable. Yay for that!&lt;/p&gt;
+
+&lt;h2 id=&quot;battery&quot;&gt;Battery&lt;/h2&gt;
+
+&lt;p&gt;Battery in the headset is capable of running for about two hours (a bit more for controllers), which is on par with how long Oculus Quest would work on a single charge.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pico-battery.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Battery is located in the back&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;using-the-pico-neo-2&quot;&gt;Using the Pico Neo 2&lt;/h2&gt;
+
+&lt;p&gt;Room setup in Pico Neo 2 is very straightforward, similar to what you get on Oculus devices. It even looks exactly the same. Only difference is that you don’t need to touch the floor to record its height, it’s enough just to look straight down. And as I said before, “play zone” is limited by a 3 by 3 meter square.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pico-tracking.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;When setting up the play area you can see through the built-in cameras&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Similar to every other headset manufacturer, Pico has its own home environment - room with some furniture and a huge window with a nice view. Here you will be selecting your apps, accessing your store and settings. There is a secondary menu - accessible by double pressing menu button - here you can access recent apps, take a screenshot or start a video capture. Last one was the most useful as it captures everything, including the view through the cameras when you step out of the “play area”. Make sure to wear pants if you are recording a tutorial.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pico-environment.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Standart VR headset UI - bunch of 2d buttons floating in space&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Pico store has a very limited apps list to choose from - there are about 30 games and 10 applications. My understanding is that the games are there only to showcase tracking and other features of the headset - as this is not a consumer device. You could watch videos, browse the Internet, try playing OhShape… and that’s it. Since it’s an enterprise device, Pico expects you to develop your own applications for your own needs using their hardware.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pico-steamvr.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;This is the quality of image using wireless streaming from PC that allowed tracking to be decent. Quite dissapointing&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;However you are not strictly limited by the internal hardware of the headset. If you have a project that runs on SteamVR on your PC you can connect your Neo 2 either wirelessly or tethered to run it. Wireless connection is done through the WiFi. Pico is recommending to use 5 Ghz WiFi networks (which I have), installing their PC software and running a built in streaming service. Initial results were horrible, I would see about 10 fps and huge visual artifacts. However upon changing streaming quality settings to Low - performance became decent. Of course video quality was horrible, but at least I was able to look around and have a try at Beat Saber streamed from my PC. However when trying to play I could clearly see how big the latency was, which made game almost unplayable. I hope Pico will continue to develop and improve this feature. The option of tethered streaming using USB cable is still in Beta so there were some tricks how to make it work. You are supposed to do following to make wired streaming work:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Prepare software for wireless streaming&lt;/li&gt;
+  &lt;li&gt;Connect the USB cable&lt;/li&gt;
+  &lt;li&gt;Unplug your Internet cable from the PC&lt;/li&gt;
+  &lt;li&gt;Software will fail to find router and will fall back to the cable option&lt;/li&gt;
+  &lt;li&gt;Enable Internet sharing through USB on the headset&lt;/li&gt;
+  &lt;li&gt;Now your Internet connection for PC is coming through the router wirelessly to the headset then to PC using USB cable&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Not the most common way of using wired headset. Combined with flimsy USB-C port, it was a nightmare to make it work for longer than a minute and I gave up after the fifth try.&lt;/p&gt;
+
+&lt;h2 id=&quot;neo-2-for-enterprise&quot;&gt;Neo 2 for Enterprise&lt;/h2&gt;
+
+&lt;p&gt;Pico Neo 2 was designed to be an enterprise device - everything in hardware and software is pointing at it. You don’t need a library of games - you are having your own app. You don’t need sub millimeter precision for tracking - you will be training power plant personnel in troubleshooting errors. You don’t need to have soft face cushions - you are planning to use the device on over 20 people per day.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pico-quest.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;One is made for consumers. Another one is built for enterprise&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Neo 2 offers best image quality in class, it has an option of eye tracking, it can track controllers in dark/behind your back/behind a wall. It has a better processor than any competitor available today. And it has a decent price - Neo 2 is $699, while the Eye version is $899.&lt;/p&gt;
+
+&lt;p&gt;I can definitely recommend this device for the Enterprise customers, but if you are a consumer looking for a better replacement for Oculus Quest - look elsewhere.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>ilja</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="vr" />
+      
+
+      
+        <summary type="html">The first feeling you get when you put on the Pico Neo 2 headset - this is what I hope to get from the Quest 2. It’s not just the lack of screen door effect, or slightly bigger field of view. It is an overall feeling of balance between all the desired features. Would I ever want better screen resolution in autonomous VR? Probably. But not in the next few years.</summary>
       
 
       
