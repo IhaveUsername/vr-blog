@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/vr/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2020-07-31T12:07:41+03:00</updated>
+  <updated>2020-08-12T20:41:55+03:00</updated>
   <id>http://localhost:4000/tag/vr/feed.xml</id>
 
   
@@ -30,6 +30,185 @@
   
   
 
+  
+    <entry>
+      <title type="html">Valve Index HMD detailed teardown</title>
+      <link href="http://localhost:4000/indexteardown" rel="alternate" type="text/html" title="Valve Index HMD detailed teardown" />
+      <published>2020-08-11T13:00:00+03:00</published>
+      <updated>2020-08-11T13:00:00+03:00</updated>
+      <id>http://localhost:4000/indexteardown</id>
+      <content type="html" xml:base="http://localhost:4000/indexteardown">&lt;p&gt;If you have ever wondered what is inside Valve Index, you might have stumbled upon my &lt;a href=&quot;https://www.reddit.com/r/ValveIndex/comments/cpayc5/valve_index_disassembly/&quot;&gt;reddit post from 2019&lt;/a&gt;. I’ve decided to dive into the details of what makes Valve Index great and share my thoughts on tech inside.&lt;/p&gt;
+
+&lt;p&gt;Teardown should begin from the simplest parts - remove the face mask (held by just magnets), unplug the main cable, and remove headphones that are held in place by a single screw each. Next remove the rubber cover that is glued around lenses. It’s not that well glued, you can just pull it off.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index1.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Rubber cover that prevents dust from getting inside lenses&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s start with a front panel - glossy front panel is removed by hand, since it is only held by magnets (but you already knew that from all the numerous pictures of people shoving stuff in the frunk of the headset). The rest of the front panel can be easily split in two parts. First is the frunk section, it will give you access to the main circuit board of the headset. You can remove it quite painlessly if you have the correct screwdriver. This panel does not contain any electronics.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index-face.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Just look at this beauty&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Second part of the front panel is more complex. It contains tracking points for the SteamVR tracking - you can see them by looking at the plastic at different angles - plastic covering tracking points is thinner so laser beams from base stations could shoot through it. SteamVR trackers are split in two independent parts, which are connected to the main circuit separately. Also this panel contains two front facing cameras, which makes the process of taking it off even more delicate. You have to disconnect two cameras and two halves of the tracking plate’s system to finally fully reveal the main circuit.&lt;/p&gt;
+
+&lt;h2 id=&quot;main-circuit&quot;&gt;Main Circuit&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index2.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;The “meat” of Valve Index&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally we get to the main computing power of the headset. You can identify the main points of the headset.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index3-1.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;This is where all the cables connect to the HMD&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;On the top there is a metal connector with FPC cable going in. It is going to the smaller circuit in the top part of the headset where the cable plugs in the headset.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index4.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Circuit board with main cable and 3.5 mm audio port. It also connects to the proximity sensor&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Same circuit has a 3.5 mm audio port for connecting headphones (I bet you didn’t know there is an audio jack) and proximity sensor between lenses. Last one is used for turning off the screens when the headset is not on the head.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index2-1.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;SteamVR tracking points are connected here&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;On the sides of the main circuit board there are two black FPC cables. Those are going to the SteamVR tracking dots located in the sides of the headsets. Here is a picture of the tracking “web” when taken out of the headset.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index5.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;One side of SteamVR tracking web taken out of the HMD&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Final two FPC cables are orange color and located at the bottom of the main board. They are connecting to a pair of displays located right behind this circuit.&lt;/p&gt;
+
+&lt;h2 id=&quot;microchips&quot;&gt;Microchips&lt;/h2&gt;
+
+&lt;p&gt;Now it is time to dive in a wonderful world of microchips and circuit boards. I want to thank &lt;a href=&quot;https://www.linkedin.com/in/popovs/&quot;&gt;Sergejs Popovs&lt;/a&gt; for helping to identify most of the components on the board.&lt;/p&gt;
+
+&lt;p&gt;Let’s start with simple chips. Here are two bluetooth &lt;a href=&quot;https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF52840&quot;&gt;chips from Nordic Semiconductors&lt;/a&gt;. Each of these chips is used for connecting one controller with the headset. That’s why there is a limitation of two devices connected to the HMD. If you want to connect more devices (Vive Trackers or other controllers) you will need to use a USB dongle with a separate Bluetooth chip.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index6.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/images/index7.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Bluetooth microchips, each connects to one device&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Do you remember the USB port in the frunk? Well, this is a &lt;a href=&quot;http://ww1.microchip.com/downloads/en/DeviceDoc/USB5744-Data-Sheet-DS00001855J.pdf&quot;&gt;chip from Microchip&lt;/a&gt; for that USB port - hence USB in the name.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index4-4.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;USB chip for USB port next to it&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is a &lt;a href=&quot;https://www.via-labs.com/product_show.php?id=96&quot;&gt;chip from Via-Labs&lt;/a&gt;. It has a purpose of converting USB 3.1 signal to the 2.0 one. Some of the chips on the circuit are not advanced enough to understand 3.1 USB, so this chip “dumbs it down”. When the signal will need to go back to the PC, the chip will convert the signal back to the USB 3.1.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index8.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;USB signal converter chip&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a flash memory chip from &lt;a href=&quot;https://www.digikey.com/products/en/integrated-circuits-ics/memory/774?k=w25q32jw&quot;&gt;Winbond Electronics&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index9.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Flash memory can be used for different kinds of tasks&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Next are these two microchips. The smaller one is a &lt;a href=&quot;https://www.analogix.com/en/products/dp-mipi-converters/anx7530&quot;&gt;SlimPort® 4K receiver from Analogix&lt;/a&gt;. It is capable of receiving Image in 4K at 60 Hz, but since screens in Valve Index are only 1440 by 1600 pixels it allows to process video at 90, 120, and even 144 Hz. It also splits the signal in two allowing each display to get its own image.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index10.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Video chips convert image that you see in your SteamVR mirror in beautiful VR image&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Larger chip is a multipurpose &lt;a href=&quot;https://www.digikey.com/products/en/integrated-circuits-ics/embedded-fpgas-field-programmable-gate-array/696?k=ICE40HX8K&quot;&gt;FPGA (Field Programmable Gate Array) chip from Lattice Semiconductor&lt;/a&gt;. It is used for tracking - all the data received from the tracking sensors is gathered here. This chip combined with the &lt;a href=&quot;http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-11289-32-bit-Cortex-M4-Microcontroller-SAM-G55_Summary-Datasheet.pdf&quot;&gt;Atmel MCU&lt;/a&gt; (located on the other side of the circuit board) are doing all the necessary tracking calculations.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.etron.com.tw/cn/products/webcam_detial.php?Product_ID=10&quot;&gt;EtronTech microchip&lt;/a&gt; is used for merging video feeds from external cameras and transmitting it to your PC.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index11.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Microchip for processing image from webcams&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Last two chips on this side of the circuit from &lt;a href=&quot;https://www.silabs.com/power/efp01-power-management-ic&quot;&gt;SiliconLabs&lt;/a&gt; are most likely related to power regulation. Both of them are located near the capacitors and an inductor (metal thingy with 150 written on it). These are making sure that nothing will get too hot on your face.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index12.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/images/index13.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Power regulating microchips&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Next step is to remove the main circuit board and look on its other side. Other side is less interesting and has very little information to offer. Most parts are related to the power regulation mentioned in the previous paragraph.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index14.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Back side of the main circuit board&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Largest chip is an Atmel MCU, which I’ve already mentioned is related to the tracking system. On the left from it is a &lt;a href=&quot;https://www.nxp.com/docs/en/data-sheet/LPC11U1X.pdf&quot;&gt;microcontroller from NXP&lt;/a&gt;. These are all the chips we managed to identify. One chip that is missing, is the additional Bluetooth module. Unlike Vive and Vive Pro, Index has bluetooth in the headset. It is used for connecting to the base stations, updating base station firmware, and sending them to sleep mode when the headset is turning off. Last one is completely optional - I prefer to keep my base stations 2.0 on all the time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index14-2.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;The only two chips worth noting on this side of the motherboard - larger one is for tracking calculations&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Why there is no separate Bluetooth chip for this purpose is still a mystery for me. Only possible explanation is that two Bluetooth chips for controllers are capable of switching to different modes and control the base stations.&lt;/p&gt;
+
+&lt;h2 id=&quot;screens&quot;&gt;Screens&lt;/h2&gt;
+
+&lt;p&gt;After the circuit is removed you will reveal several key components. First - you can see two displays - quick search shows that those panels are made by BOE Technology - Chinese display manufacturer. Those are 1440×1600, 615PPI 3.5” &lt;a href=&quot;https://www.panelook.com/VS035ZSM-NW0-69P0_BOE_3.5_LCM_overview_37926.html&quot;&gt;panels&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index15.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;View of the HMD with main board removed&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Note some key elements in this view. On the bottom there is a circular mechanism with a metal pin with springs going through the whole headset. Similar pin is barely visible on the top of the headset. This is an IPD adjustment system - movement of the knob at the bottom of the HMD will rotate circular element in the bottom center which will push screens apart.
+On the left and right sides of HMD you can see black gears - this is a system for eye relief - rotating a knob on the side of the headset will move the facemask relatively to the screens. Gear system is making sure both sides are rotating simultaneously, without giving too much pressure to the mechanism.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index16.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;IPD knob is actually a screw&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In order to take the central part out from the headset, you will need to take the cap off the IPD adjustment knob and unscrew it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index17.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Lens chambers with IPD mechanism still attached&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Next was what I call the “wondering in the dark” part of teardown - for about 30 minutes we were trying to find a way of taking it apart without breaking anything, eventually using force to break one gear inside that was holding display chambers in place.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index18.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Right eye lens chamber removed&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;After this step you can easily take off separate lens chambers and view the details. Chambers are sealed shut so nothing will get inside - they are assembled in perfectly clean conditions with no dust particles. 
+In order to take it apart you can probably try to melt glue or something like that. But we are no iFixit, we used good ol’ force. Here you can see the screen separated from the chamber.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index19.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/images/index20.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;BOE screen removed from the chamber&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Screen has a polarised diffuser glued to it, which is particularly difficult to remove. It is made of very thin crystal glass and it cracks easily. You can see that the corners of it are cracked.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index21.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Crystal polarisation diffuser&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Diffuser is added to blend pixels better, making the screen door effect even lower.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index22.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Fancy multilayered lens&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally - the lenses. I was expecting them to be thicker with the effect that they create. Valve are saying “The custom lenses built into the Valve Index Headset maximize field of view without sacrificing edge-to-edge clarity. High geometric stability allows you to look around the scene by moving your eyes (not just your head) with minimal shape distortion”. I tend to agree that these are the most advanced lenses in modern mass produced HMD, even though they have their own flaws. Main issue is the light spill when using a headset, you can see the bright light’s reflections in spots where they shouldn’t be.&lt;/p&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;/h2&gt;
+
+&lt;p&gt;As you can clearly see, it is not possible to replace a damaged screen or scratched lens all by yourself (even though for latter one you might try to take the lens out using a suction cup, however I don’t think that is a good idea, as lenses and screens are calibrated in the factory).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index-end.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Sometimes… I feel like a monster…&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I am going to put the high-resolution images of the teardown and of the motherboard &lt;a href=&quot;https://photos.app.goo.gl/dhuPVWTu6P5XWo4HA&quot;&gt;here&lt;/a&gt; so you can see and check all the details by yourself. If you have any corrections, notes, or questions, shoot me an &lt;a href=&quot;mailto:zegarsilya@gmail.com&quot;&gt;email&lt;/a&gt; or PM me on &lt;a href=&quot;https://twitter.com/GamerToTheEnd&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>ilja</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="vr" />
+      
+
+      
+        <summary type="html">If you have ever wondered what is inside Valve Index, you might have stumbled upon my reddit post from 2019. I’ve decided to dive into the details of what makes Valve Index great and share my thoughts on tech inside.</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Pimax 8k Plus Review</title>
