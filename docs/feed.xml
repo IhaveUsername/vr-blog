@@ -1,4 +1,134 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-14T11:29:47+03:00</updated><id>http://localhost:4000/</id><title type="html">VR blog</title><subtitle>VR/AR software and hardware reviews and guides</subtitle><entry><title type="html">Valve Index HMD detailed teardown</title><link href="http://localhost:4000/indexteardown" rel="alternate" type="text/html" title="Valve Index HMD detailed teardown" /><published>2020-08-11T13:00:00+03:00</published><updated>2020-08-11T13:00:00+03:00</updated><id>http://localhost:4000/indexteardown</id><content type="html" xml:base="http://localhost:4000/indexteardown">&lt;p&gt;If you have ever wondered what is inside Valve Index, you might have stumbled upon my &lt;a href=&quot;https://www.reddit.com/r/ValveIndex/comments/cpayc5/valve_index_disassembly/&quot;&gt;reddit post from 2019&lt;/a&gt;. I’ve decided to dive into the details of what makes Valve Index great and share my thoughts on tech inside.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-16T14:40:36+03:00</updated><id>http://localhost:4000/</id><title type="html">VR blog</title><subtitle>VR/AR software and hardware reviews and guides</subtitle><entry><title type="html">SteamVR HMD’s - technology teardown</title><link href="http://localhost:4000/steamvr-tracking" rel="alternate" type="text/html" title="SteamVR HMD's - technology teardown" /><published>2020-09-15T13:00:00+03:00</published><updated>2020-09-15T13:00:00+03:00</updated><id>http://localhost:4000/steamvr-tracking</id><content type="html" xml:base="http://localhost:4000/steamvr-tracking">&lt;p&gt;This article will dive deep into explaining how the SteamVR tracking technology works and will show how tracking point placement affects HMD’s behaviour. I’ve also analyzed all consumer devices that rely on SteamVR tracking.&lt;/p&gt;
+
+&lt;h2 id=&quot;steamvr-tracking&quot;&gt;SteamVR tracking&lt;/h2&gt;
+
+&lt;p&gt;SteamVR tracking system (don’t mix it with the SteamVR software) is based on one or more base stations that emit lasers at fixed time intervals. This system is used in devices from many manufacturers, and Valve is kindly allowing it to be used for free with only one condition. Your device has to support SteamVR software.&lt;/p&gt;
+
+&lt;p&gt;Main limitation of SteamVR tracking is that the lasers are easily reflected by glass, mirrored surfaces, glossy furniture, and when bounced back they can create tracking issues.&lt;/p&gt;
+
+&lt;p&gt;If you want to create a SteamVR tracked device you will start with a mesh of Light-to-Digital Sensors located on the surface of your controller/HMD. Sensors should be distributed evenly, so at any point base stations with emitters will see two of the sensors. It is enough to see two sensors at any given moment for accurate tracking.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-steamvr-tracking-works&quot;&gt;How SteamVR tracking works&lt;/h2&gt;
+
+&lt;p&gt;Every version of the base station of the SteamVR tracking system has been following similar techniques to track devices. Each base station contains two lasers - first is lighting through the room moving horizontally, second one is moving vertically. In the SteamVR base stations 1.0 there is also a grid of flashing LEDs. This grid would light-up, sending “sync flash”, telling all the visible sensors to start counting, then one laser would pass, and every tracking point would record time difference between flash and when it was beamed by a laser. Then the process will repeat for the second laser. Based on the delay between flashes and laser signals, the system can calculate where in the two dimensional plane each tracking point is located. Knowing at least two points positions the system can introduce a third coordinate (and also calculate angle and rotation of the headset). It is possible because locations of the tracking points are already predefined in SteamVR software - it contains a very simplified model of the HMD or/and controllers with information about actual distance between two tracking points. This calculation is happening at 1000 Hz which makes SteamVR tracking the most accurate tracking in the consumer VR device today.&lt;/p&gt;
+
+&lt;p&gt;In the base stations 2.0 the main concept remained untouched, but hardware was optimised. Instead of anonymous laser signal, 2.0 stations shoot a laser already containing “sync flash” timecode and base station ID - this way the amount of LEDs and other active components in the base station was reduced. It is also now relying on a single rotating motor instead of two, lowering chances of the mechanical failure.&lt;/p&gt;
+
+&lt;h2 id=&quot;hmd-comparison&quot;&gt;HMD comparison&lt;/h2&gt;
+
+&lt;p&gt;Now when we know how SteamVR tracking works, let’s have a look at some of the devices that use SteamVR tracking. I have not included Varjo headset in this list for two reasons - first, it is not a consumer device, second, I used to work there and my analysis of Varjo headset could be seen as biased. We will go from the best tracking to the worst tracking in this list.&lt;/p&gt;
+
+&lt;h2 id=&quot;valve-index&quot;&gt;Valve Index&lt;/h2&gt;
+&lt;p&gt;Let’s start with a device that has the best positioning of sensors today. Valve has developed this tracking technology, so it is not really surprising that they have best tracking in class. It’s not like Vive or Pimax has bad tracking, but in the tests with robotic arm, Index was showing better results. I cannot disclose who and when tested it for confidentiality reasons, so you will have to believe me.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index-front.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Tracking points on the front of the Valve Index&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;There are 9 tracking points on the front on the headset. Note that all of them are located outside of the glass panel area (removed on the picture). It is done this way because typically the laser passing through the transparent panel would slightly bend resulting in tracking issues. However on Valve Index the glass panel is reflective for the visible light (that’s why you can see your reflection in it) but it would not reflect the laser light, letting it pass through. This is a reason why there are no tracking issues with controllers, the front panel simply wouldn’t reflect lasers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index-side.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Tracking points on the side of the Valve Index (other side is mirrored)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;On each side of the headset there are five tracking points, most of them are located on the curved parts, so they will be visible from wider angles.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index-top.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Tracking points on the top of the Valve Index&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;There are seven tracking points on the top. Note how three points in the center are slightly lifted. That way they can be tracked also from front or side, depending on the user’s head angle.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/index-bottom.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Tracking points on the bottom of the Valve Index&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally there are six tracking points on the bottom. I am a bit disappointed with placement here - tracking points can be easily covered especially if you are holding a headset with two hands. However, as we know from the teardown, middle space was taken by the IPD adjustment mechanism, so I guess Valve had to compromise.&lt;/p&gt;
+
+&lt;p&gt;In total there are 32 tracking points - the number is not random. It is a limit of trackers that could be attached to a single tracking processing microcontroller. If you would want to have more tracking sensors - you would have to install a second microchip inside, which would have greatly complicated things.&lt;/p&gt;
+
+&lt;h2 id=&quot;vive-pro&quot;&gt;Vive Pro&lt;/h2&gt;
+
+&lt;p&gt;Let’s compare how tracking is different on the arguably best Vive headset up to date. HTC made a decision to use tracking points as part of the design, giving their headsets this futuristic look, that is easily recognisable.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pro-front.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Tracking points on the front of the HTC Vive Pro&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Front panel of the Vive Pro has fourteen tracking points - the location of the sensors almost didn’t change since the original Vive, but it has become symmetrical horizontally and vertically. I have a feeling that the sensor location on the Vive Pro was guided more by the design team rather than the engineering team.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pro-side.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Tracking points on the side of the HTC Vive Pro (other side is mirrored)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Each side has five sensors.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pro-top.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Tracking points on the top of the HTC Vive Pro&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;On the top side there are only four tracking points. Points are facing more to the side, rather than upwards. HTC doesn’t expect players to be directly under the base station.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pro-bottom.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Tracking points on the bottom of the HTC Vive Pro&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Bottom side is symmetrical to the top side with only four tracking points. It is enough for most situations when you look up in VR.&lt;/p&gt;
+
+&lt;p&gt;In total there are again 32 tracking points. I will argue that the top and bottom side of the headset wouldn’t track as well as the ones on Valve Index due to the small amount of tracking points. But scenarios when the base station could only see top or bottom sensors seems to be unlikely.&lt;/p&gt;
+
+&lt;h2 id=&quot;vive-cosmos-elite&quot;&gt;Vive Cosmos Elite&lt;/h2&gt;
+
+&lt;p&gt;This headset is a weird one. Don’t get me wrong, I like the idea of modular faceplates. If you want to play casual games, you can get OG Cosmos with their horrendous (in my personal opinion) controller tracking. But having tracking sensors only on a thin faceplate creates some limitations.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cosmos-front.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Tracking points on the front of the HTC Vive Cosmos Elite&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In the front there are still 14 tracking points. Design has changed, there is no more recognizable Vive spirit on the face of the HMD. Four points that are closer to the center are faced inwards, so the tracking point on the bottom is best visible from the top, left tracker best visible from the right and the other way around. However notice how close sensors are to each other on the top and on the bottom. It is much easier to cover multiple trackers at once if you bring a hand or a controller close to the face. And if you take off the face plate, you can see that there is nothing that would obstruct from putting sensors closer to the cameras.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cosmos-side.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Tracking points on the side of the HTC Vive Cosmos Elite (other side is mirrored)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Side of the front plate has only three tracking points. And here you can clearly see how HTC have shot themselves in the foot by choosing a faceplate approach from Cosmos. Look at how much space there is around the side camera. You could easily fit there another pair of trackers which will make tracking better when not facing base stations.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cosmos-top.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Tracking points on the top of the HTC Vive Cosmos Elite)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;There are six tracking points on the top. But again, look how close they are to each other and how much space there is closer to the head. And what if you would shove some of the trackers in the halo strap? (Latter one wouldn’t actually work as the headset can flip up, so the distance between track points on the headset and on the strap will not be constant).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cosmos-bottom.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Tracking points on the bottom of the HTC Vive Cosmos Elite&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Bottom side is symmetrical to the top side. So much space to use, it hurts!&lt;/p&gt;
+
+&lt;p&gt;As you might have guessed, Cosmos Elite has the weakest tracking out of three headsets discussed here so far. But it doesn’t mean it is bad. It just means in situations when there is a single base station in a room, it will fail earlier than Valve Index or Vive Pro would.&lt;/p&gt;
+
+&lt;p&gt;And now about that faceplate. If you would like to buy it separately, it will cost you about $200 or €220. And what you get are 32 sensors, a small microcontroller, a proprietary connector, and a bunch of plastic that makes it look fancy. If you would want to buy your own HDK with 32 sensors and microchip, you could get it from &lt;a href=&quot;https://tundra-labs.com/shop/tl448k6d-gp-hdk&quot;&gt;Tundra Labs&lt;/a&gt; for $129.99. And what you will be getting is the consumer version, I am sure HTC is getting it a bit cheaper. My point here? No point, companies have to earn money, I just enjoy knowing how much they are earning from every purchase.&lt;/p&gt;
+
+&lt;h2 id=&quot;pimax-5k&quot;&gt;Pimax 5k+&lt;/h2&gt;
+
+&lt;p&gt;This was a tough one to dissect. On the Pimax headsets you cannot see tracking points with your bare eyes. Even though I have both 5k+ and 8k+ HMDs, I was terrified of the idea of taking them apart just for the purpose of showing tracking points. Mainly because of how fragile the casing plastic is, but also because my main expertise is in teardowns not the assembly. However, since the laser can penetrate the plastic case, so can I. I have found an old surveillance camera with an IR mode, connected to the pc and viola, I can see inside the Pimax.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/ir-pimax.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;This is how IR camera sees Pimax HMD&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;That allowed me to find all 32 tracking sensors and map them on the photos.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pimax-front.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Tracking points on the front of the Pimax 5k+&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The amount of tracking points on the front of the headset is underwhelming, especially considering the size of the HMD. It makes sense that Pimax was the worst SteamVR tracked headset in the tests - covering a bunch of sensors would be so easy.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pimax-side.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Tracking points on the side of the Pimax 5k+ (other side is mirrored)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;However, while they fail to put enough sensors on the front, they might have put a bit too much on the sides. Each side has nine tracking points. They are packed tightly, but they are facing in different directions on different planes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pimax-top.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Tracking points on the top of the Pimax 5k+&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;On the top there are also only six points. It is disappointing that they didn’t use elevated areas in the middle for additional trackers - it would have been useful for situations when the user is close to the base station.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pimax-bottom.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Tracking points on the bottom of the Pimax 5k+&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;If you were counting up to now, we’ve already found 30 tracking points. Which leaves us with only two tracking sensors for the bottom side of the headset. I guess Pimax really doesn’t want you to look up much. Also I think it is related to a mount at the bottom for the hand tracking module - Pimax didn’t want to block the sensors for people who will get that module.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;When you are designing the headset, you will have many opportunities to screw things up. Hopefully after reading this article you will know the limitations of SteamVR tracking and design HMD better. Make sure to leave space for strategically placed tracking sensors, balance their placement and test prototypes thoroughly from all the angles. I really hope to see more devices relying on this tracking system in the future, not only business oriented, but also consumer oriented.&lt;/p&gt;</content><author><name>ilja</name></author><category term="vr" /><summary type="html">This article will dive deep into explaining how the SteamVR tracking technology works and will show how tracking point placement affects HMD’s behaviour. I’ve also analyzed all consumer devices that rely on SteamVR tracking.</summary></entry><entry><title type="html">Valve Index HMD detailed teardown</title><link href="http://localhost:4000/indexteardown" rel="alternate" type="text/html" title="Valve Index HMD detailed teardown" /><published>2020-08-11T13:00:00+03:00</published><updated>2020-08-11T13:00:00+03:00</updated><id>http://localhost:4000/indexteardown</id><content type="html" xml:base="http://localhost:4000/indexteardown">&lt;p&gt;If you have ever wondered what is inside Valve Index, you might have stumbled upon my &lt;a href=&quot;https://www.reddit.com/r/ValveIndex/comments/cpayc5/valve_index_disassembly/&quot;&gt;reddit post from 2019&lt;/a&gt;. I’ve decided to dive into the details of what makes Valve Index great and share my thoughts on tech inside.&lt;/p&gt;
 
 &lt;p&gt;Teardown should begin from the simplest parts - remove the face mask (held by just magnets), unplug the main cable, and remove headphones that are held in place by a single screw each. Next remove the rubber cover that is glued around lenses. It’s not that well glued, you can just pull it off.&lt;/p&gt;
 

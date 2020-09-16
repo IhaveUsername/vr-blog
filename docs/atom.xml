@@ -8,6 +8,21 @@
     
       
       <item>
+        <title>SteamVR HMD's - technology teardown</title>
+        
+          <description>&lt;p&gt;This article will dive deep into explaining how the SteamVR tracking technology works and will show how tracking point placement affects HMD’s behaviour. I’ve also analyzed all consumer devices that rely on SteamVR tracking.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 15 Sep 2020 13:00:00 +0300</pubDate>
+        <link>
+        http://localhost:4000/steamvr-tracking</link>
+        <guid isPermaLink="true">http://localhost:4000/steamvr-tracking</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Valve Index HMD detailed teardown</title>
         
           <description>&lt;p&gt;If you have ever wondered what is inside Valve Index, you might have stumbled upon my &lt;a href=&quot;https://www.reddit.com/r/ValveIndex/comments/cpayc5/valve_index_disassembly/&quot;&gt;reddit post from 2019&lt;/a&gt;. I’ve decided to dive into the details of what makes Valve Index great and share my thoughts on tech inside.&lt;/p&gt;
