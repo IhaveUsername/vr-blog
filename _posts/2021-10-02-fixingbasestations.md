@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover:  assets/images/reverb-title.png
+cover:  assets/images/base_station_repair/BS_3.jpg
 navigation: True
 title: Base Station 2.0 Repair Guide
 date: 2020-12-29 10:00:00
